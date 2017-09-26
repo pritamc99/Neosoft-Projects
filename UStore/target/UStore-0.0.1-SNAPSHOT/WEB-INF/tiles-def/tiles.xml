@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="basic" template="/WEB-INF/layout/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />  
+    <put-attribute name="adminPanel" value="/WEB-INF/jsp/NewFile.jsp"/> 
+    <put-attribute name="bodyContent" value="/WEB-INF/jsp/bodyContent.jsp" />  
+	<put-attribute name="slider" value="/WEB-INF/jsp/slider.jsp" /> 
+	<put-attribute name="promo" value="/WEB-INF/jsp/promo.jsp" />
+	<put-attribute name="body" value="/WEB-INF/jsp/body.jsp" /> 
+	<put-attribute name="productWidget" value="/WEB-INF/jsp/productWidget.jsp" />  
+    <put-attribute name="brand" value="/WEB-INF/jsp/brand.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+  </definition>
+  
+  <definition name="index" extends="basic">
+	    <put-attribute name="title" value="Online Shop" />
+	   
+  </definition>
+  
+  <definition name="login" extends="basic">
+	    <put-attribute name="title" value="Customer Login" />
+	    <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	 	
+	    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+  </definition>
+  
+  <definition name="logout" extends="basic">
+  <put-attribute name="title" value="Online Shop" />
+  </definition>
+  
+  <definition name="signIn" extends="basic">
+	    <put-attribute name="title" value="Customer Login" />
+	    <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" /> 
+	    
+  </definition>
+  
+  <definition name="register" extends="basic">
+	    <put-attribute name="title" value="Customer Registration" />
+	    <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+  </definition>
+  
+  <definition name="success" extends="basic">
+	    <put-attribute name="title" value="Registration successfull" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/success.jsp" />
+  </definition>
+  
+  <definition name="admin" extends="basic">
+	    <put-attribute name="title" value="Admin page" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	    <put-attribute name="body" value="" />
+	    <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="addCategory" extends="basic">
+	    <put-attribute name="title" value="Add Category page" />
+	     <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/addCategory.jsp" />
+	     <put-attribute name="productWidget" value="" />
+	     <put-attribute name="brand" value="" />
+	     <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="addProduct" extends="basic">
+	    <put-attribute name="title" value="Add Product page" />
+	     <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/addProduct.jsp" />
+	     <put-attribute name="productWidget" value="" />
+	     <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="addItem" extends="basic">
+	    <put-attribute name="title" value="Add Item page" />
+	     <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/addItem.jsp" />
+	     <put-attribute name="productWidget" value="" />
+	     <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="removeItem" extends="basic">
+	    <put-attribute name="title" value="Remove Item page" />
+	     <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/removeItem.jsp" />
+	     <put-attribute name="productWidget" value="" />
+	     <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="updateItem" extends="basic">
+	    <put-attribute name="title" value="Update Item page" />
+	     <put-attribute name="adminPanel" value="/WEB-INF/jsp/admin.jsp" />
+	     <put-attribute name="slider" value="" /> 
+		<put-attribute name="promo" value="" />
+	    <put-attribute name="body" value="/WEB-INF/jsp/updateItem.jsp" />
+	     <put-attribute name="productWidget" value="" />
+	     <put-attribute name="brand" value="" />
+  </definition>
+  
+  <definition name="cart" extends="basic">
+	     <put-attribute name="title" value="My cart" />
+	     <put-attribute name="slider" value="" /> 
+		 <put-attribute name="promo" value="" />
+		 <put-attribute name="body" value="/WEB-INF/jsp/cart.jsp" /> 
+		 <put-attribute name="brand" value="" />
+		 <put-attribute name="productWidget" value="" />  
+	     <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+  </definition>
+  <definition name="orderPage" extends="basic">
+	     <put-attribute name="title" value="My cart" />
+	     <put-attribute name="slider" value="" /> 
+		 <put-attribute name="promo" value="" />
+		 <put-attribute name="body" value="/WEB-INF/jsp/orderPage.jsp" /> 
+		 <put-attribute name="brand" value="" />
+		 <put-attribute name="productWidget" value="" />  
+	     <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+  </definition>
+  
+   <definition name="orderInvoice" extends="basic">
+	     <put-attribute name="title" value="Order Invoice" />
+	     <put-attribute name="header" value="" />
+    	 <put-attribute name="menu" value="" />  
+	     <put-attribute name="slider" value="" /> 
+		 <put-attribute name="promo" value="" />
+		 <put-attribute name="body" value="/WEB-INF/jsp/orderInvoice.jsp" /> 
+		 <put-attribute name="brand" value="" />
+		 <put-attribute name="productWidget" value="" />  
+	     <put-attribute name="footer" value="" />
+  </definition>
+  
+  <definition name="myAccount" extends="basic">
+	     <put-attribute name="title" value="My Account" />
+	     <put-attribute name="slider" value="" /> 
+		 <put-attribute name="promo" value="" />
+		 <put-attribute name="body" value="/WEB-INF/jsp/myAccount.jsp" /> 
+		 <put-attribute name="brand" value="" />
+		 <put-attribute name="productWidget" value="" />  
+  </definition>
+  
+</tiles-definitions>
